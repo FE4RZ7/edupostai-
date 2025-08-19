@@ -1,0 +1,423 @@
+<html class="dark"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="http://smartrecipe.rork.app/assets/./assets/images/icon.png"/><title>SmartRecipe – Preview on Rork</title><meta http-equiv="refresh" content="0;url=exp://smartrecipe.rork.app/robots.txt"/><meta name="apple-itunes-app" content="app-id=982107779, app-argument=exp://smartrecipe.rork.app/robots.txt"/><script defer="" data-domain="rork.app" src="https://plausible.io/js/script.js"></script><style>
+          :root {
+            --background: 240 10% 3.9%;
+            --foreground: 0 0% 98%;
+            --card: 240 10% 3.9%;
+            --card-foreground: 0 0% 98%;
+            --popover: 240 10% 3.9%;
+            --popover-foreground: 0 0% 98%;
+            --primary: 0 0% 98%;
+            --primary-foreground: 240 5.9% 10%;
+            --secondary: 240 3.7% 15.9%;
+            --secondary-foreground: 0 0% 98%;
+            --muted: 240 3.7% 15.9%;
+            --muted-foreground: 240 5% 64.9%;
+            --accent: 240 3.7% 15.9%;
+            --accent-foreground: 0 0% 98%;
+            --destructive: 0 62.8% 30.6%;
+            --destructive-foreground: 0 0% 98%;
+            --border: 240 3.7% 15.9%;
+            --input: 240 3.7% 15.9%;
+            --ring: 240 4.9% 83.9%;
+            --radius: 0.5rem;
+          }
+
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-color: hsl(var(--border));
+          }
+
+          body {
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+            display: flex;
+            flex-direction: column;
+          }
+
+          .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+          }
+
+          @media (min-width: 769px) {
+            .main-content {
+              padding: 48px 0;
+            }
+          }
+        </style></head><body><a href="https://rork.com" target="_blank" class="logo-container"><style>
+        .logo-container {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          position: absolute;
+          top: 18px;
+          left: 20px;
+          z-index: 10;
+        }
+
+        .logo {
+          width: 20px;
+          height: 20px;
+          color: hsl(var(--foreground));
+        }
+
+        .logo-text {
+          font-size: 20px;
+          font-weight: 600;
+          color: hsl(var(--foreground));
+        }
+      </style><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="logo"><circle cx="12" cy="12" r="10" fill="currentColor"></circle></svg><div class="logo-text">Rork</div></a><div class="main-content"><div class="mobile-container"><style>
+        .mobile-container {
+          display: none;
+          text-align: center;
+          padding: 64px 24px 24px 24px;
+          flex: 1;
+          max-width: 400px;
+          margin: 0 auto;
+          width: 100%;
+          height: 100dvh;
+          flex-direction: column;
+          justify-content: center;
+          box-sizing: border-box;
+          position: relative;
+        }
+
+        .mobile-view-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 24px;
+        }
+
+        .mobile-view-icon {
+          width: 96px;
+          height: 96px;
+          border-radius: 20px;
+        }
+
+        .mobile-view-title {
+          font-size: 28px;
+          font-weight: 600;
+          color: hsl(var(--foreground));
+        }
+
+        .mobile-view-description {
+          color: hsl(var(--muted-foreground));
+          line-height: 1.6;
+          font-size: 16px;
+          max-width: 300px;
+        }
+
+        @media (max-width: 1024px) {
+          .mobile-container {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      </style><div class="mobile-view-content"><img src="http://smartrecipe.rork.app/assets/./assets/images/icon.png" class="mobile-view-icon" alt="SmartRecipe icon"/><h2 class="mobile-view-title">SmartRecipe</h2><div class="mobile-view-description">This is a mini app made in Rork, you need to install Expo Go to preview it.</div><style>
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 48px;
+          border-radius: var(--radius);
+          font-size: 16px;
+          font-weight: 500;
+          border: none;
+          cursor: pointer;
+          text-decoration: none;
+          transition: all 0.2s;
+        }
+
+        .button.primary {
+          background: hsl(var(--primary));
+          color: hsl(var(--primary-foreground));
+        }
+
+        .button.primary:hover {
+          opacity: 0.9;
+        }
+
+        .button.secondary {
+          background: hsl(var(--secondary));
+          color: hsl(var(--secondary-foreground));
+        }
+
+        .button.secondary:hover {
+          background: hsl(var(--secondary) / 0.8);
+        }
+
+        .copy-button {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: hsl(var(--primary));
+          color: hsl(var(--primary-foreground));
+          padding: 12px 20px;
+          border-radius: var(--radius);
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+          border: none;
+          transition: all 0.2s;
+          width: fit-content;
+        }
+      </style><a href="robots.txt.html" class="button primary ">Open in Expo Go</a><style>
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 48px;
+          border-radius: var(--radius);
+          font-size: 16px;
+          font-weight: 500;
+          border: none;
+          cursor: pointer;
+          text-decoration: none;
+          transition: all 0.2s;
+        }
+
+        .button.primary {
+          background: hsl(var(--primary));
+          color: hsl(var(--primary-foreground));
+        }
+
+        .button.primary:hover {
+          opacity: 0.9;
+        }
+
+        .button.secondary {
+          background: hsl(var(--secondary));
+          color: hsl(var(--secondary-foreground));
+        }
+
+        .button.secondary:hover {
+          background: hsl(var(--secondary) / 0.8);
+        }
+
+        .copy-button {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: hsl(var(--primary));
+          color: hsl(var(--primary-foreground));
+          padding: 12px 20px;
+          border-radius: var(--radius);
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+          border: none;
+          transition: all 0.2s;
+          width: fit-content;
+        }
+      </style><a href="robots.txt.html#" class="button secondary install-button" id="install-button">Install Expo Go</a></div></div><div class="desktop-container"><style>
+        .desktop-container {
+          display: none;
+        }
+
+        @media (min-width: 769px) {
+          .desktop-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 48px;
+          }
+        }
+
+        .app-info {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .app-header {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+        }
+
+        .app-icon {
+          width: 128px;
+          height: 128px;
+          border-radius: 20px;
+        }
+
+        .app-title {
+          font-size: 32px;
+          font-weight: 600;
+          color: hsl(var(--foreground));
+        }
+
+        .instructions {
+          font-size: 16px;
+          line-height: 1.6;
+          color: hsl(var(--muted-foreground));
+        }
+
+        .copy-button-content {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .qr-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: hsl(var(--card));
+          border-radius: var(--radius);
+        }
+
+        .app-subtitle {
+          font-size: 16px;
+          color: hsl(var(--muted-foreground));
+          margin-top: 8px;
+        }
+
+        .main-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+        }
+
+        @media (min-width: 769px) {
+          .main-content {
+            padding: 48px 0;
+          }
+        }
+      </style><div class="app-info"><div class="app-header"><img src="http://smartrecipe.rork.app/assets/./assets/images/icon.png" class="app-icon" alt="SmartRecipe icon"/><h1 class="app-title">SmartRecipe</h1></div><div class="instructions">Scan QR code to preview the app on your mobile device. You&#x27;ll need Expo Go app from App Store or Google Play.</div><style>
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 48px;
+          border-radius: var(--radius);
+          font-size: 16px;
+          font-weight: 500;
+          border: none;
+          cursor: pointer;
+          text-decoration: none;
+          transition: all 0.2s;
+        }
+
+        .button.primary {
+          background: hsl(var(--primary));
+          color: hsl(var(--primary-foreground));
+        }
+
+        .button.primary:hover {
+          opacity: 0.9;
+        }
+
+        .button.secondary {
+          background: hsl(var(--secondary));
+          color: hsl(var(--secondary-foreground));
+        }
+
+        .button.secondary:hover {
+          background: hsl(var(--secondary) / 0.8);
+        }
+
+        .copy-button {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: hsl(var(--primary));
+          color: hsl(var(--primary-foreground));
+          padding: 12px 20px;
+          border-radius: var(--radius);
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+          border: none;
+          transition: all 0.2s;
+          width: fit-content;
+        }
+      </style><button class="button primary copy-button"><div class="copy-button-content"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>Copy link</div></button></div><div class="qr-section"><svg height="320" width="320" viewBox="0 0 33 33" role="img"><path fill="hsl(var(--accent))" d="M0,0 h33v33H0z" shape-rendering="crispEdges"></path><path fill="hsl(var(--foreground))" d="M2 2h7v1H2zM10 2h1v1H10zM12 2h1v1H12zM14 2h1v1H14zM20 2h1v1H20zM24,2 h7v1H24zM2 3h1v1H2zM8 3h1v1H8zM14 3h1v1H14zM19 3h1v1H19zM24 3h1v1H24zM30,3 h1v1H30zM2 4h1v1H2zM4 4h3v1H4zM8 4h1v1H8zM10 4h3v1H10zM14 4h4v1H14zM19 4h1v1H19zM22 4h1v1H22zM24 4h1v1H24zM26 4h3v1H26zM30,4 h1v1H30zM2 5h1v1H2zM4 5h3v1H4zM8 5h1v1H8zM11 5h1v1H11zM13 5h1v1H13zM15 5h2v1H15zM18 5h2v1H18zM22 5h1v1H22zM24 5h1v1H24zM26 5h3v1H26zM30,5 h1v1H30zM2 6h1v1H2zM4 6h3v1H4zM8 6h1v1H8zM11 6h3v1H11zM15 6h1v1H15zM20 6h1v1H20zM24 6h1v1H24zM26 6h3v1H26zM30,6 h1v1H30zM2 7h1v1H2zM8 7h1v1H8zM10 7h1v1H10zM12 7h2v1H12zM16 7h1v1H16zM19 7h2v1H19zM22 7h1v1H22zM24 7h1v1H24zM30,7 h1v1H30zM2 8h7v1H2zM10 8h1v1H10zM12 8h1v1H12zM14 8h1v1H14zM16 8h1v1H16zM18 8h1v1H18zM20 8h1v1H20zM22 8h1v1H22zM24,8 h7v1H24zM12 9h2v1H12zM17 9h2v1H17zM21 9h2v1H21zM2 10h1v1H2zM4 10h1v1H4zM8 10h2v1H8zM11 10h1v1H11zM13 10h4v1H13zM18 10h1v1H18zM22 10h1v1H22zM25 10h1v1H25zM28 10h1v1H28zM30,10 h1v1H30zM2 11h1v1H2zM12 11h4v1H12zM17 11h1v1H17zM21 11h5v1H21zM29,11 h2v1H29zM3 12h1v1H3zM5 12h2v1H5zM8 12h4v1H8zM14 12h1v1H14zM17 12h1v1H17zM19 12h10v1H19zM30,12 h1v1H30zM4 13h1v1H4zM7 13h1v1H7zM10 13h3v1H10zM14 13h2v1H14zM17 13h1v1H17zM20 13h2v1H20zM24 13h2v1H24zM2 14h3v1H2zM7 14h2v1H7zM11 14h1v1H11zM14 14h2v1H14zM17 14h1v1H17zM21 14h1v1H21zM24 14h1v1H24zM30,14 h1v1H30zM5 15h3v1H5zM9 15h5v1H9zM17 15h2v1H17zM20 15h3v1H20zM24 15h2v1H24zM28,15 h3v1H28zM3 16h4v1H3zM8 16h1v1H8zM11 16h3v1H11zM15 16h8v1H15zM24 16h2v1H24zM27 16h1v1H27zM30,16 h1v1H30zM2 17h4v1H2zM9 17h2v1H9zM12 17h2v1H12zM16 17h1v1H16zM18 17h1v1H18zM21 17h3v1H21zM3 18h1v1H3zM5 18h1v1H5zM7 18h3v1H7zM13 18h1v1H13zM15 18h3v1H15zM22 18h1v1H22zM24 18h1v1H24zM27 18h1v1H27zM30,18 h1v1H30zM4 19h1v1H4zM6 19h1v1H6zM10 19h3v1H10zM15 19h4v1H15zM20 19h2v1H20zM24 19h2v1H24zM27,19 h4v1H27zM2 20h3v1H2zM6 20h1v1H6zM8 20h2v1H8zM11 20h1v1H11zM17 20h1v1H17zM19 20h3v1H19zM23 20h2v1H23zM26 20h1v1H26zM30,20 h1v1H30zM4 21h2v1H4zM7 21h1v1H7zM9 21h4v1H9zM15 21h1v1H15zM17 21h2v1H17zM22 21h3v1H22zM2 22h4v1H2zM7 22h2v1H7zM13 22h1v1H13zM15 22h1v1H15zM18 22h1v1H18zM20 22h8v1H20zM29 22h1v1H29zM10 23h1v1H10zM13 23h1v1H13zM17 23h3v1H17zM22 23h1v1H22zM26 23h3v1H26zM30,23 h1v1H30zM2 24h7v1H2zM10 24h1v1H10zM15 24h4v1H15zM22 24h1v1H22zM24 24h1v1H24zM26 24h1v1H26zM30,24 h1v1H30zM2 25h1v1H2zM8 25h1v1H8zM11 25h1v1H11zM16 25h2v1H16zM20 25h3v1H20zM26 25h2v1H26zM30,25 h1v1H30zM2 26h1v1H2zM4 26h3v1H4zM8 26h1v1H8zM11 26h1v1H11zM14 26h5v1H14zM21 26h6v1H21zM30,26 h1v1H30zM2 27h1v1H2zM4 27h3v1H4zM8 27h1v1H8zM11 27h1v1H11zM13 27h1v1H13zM16 27h3v1H16zM20 27h1v1H20zM23 27h1v1H23zM26 27h1v1H26zM30,27 h1v1H30zM2 28h1v1H2zM4 28h3v1H4zM8 28h1v1H8zM10 28h1v1H10zM15 28h3v1H15zM20 28h4v1H20zM26 28h1v1H26zM29,28 h2v1H29zM2 29h1v1H2zM8 29h1v1H8zM11 29h3v1H11zM17 29h2v1H17zM21 29h2v1H21zM24 29h2v1H24zM27 29h1v1H27zM2 30h7v1H2zM10 30h1v1H10zM13 30h1v1H13zM15 30h2v1H15zM18 30h1v1H18zM22 30h1v1H22zM24 30h1v1H24zM27 30h1v1H27zM30,30 h1v1H30z" shape-rendering="crispEdges"></path></svg><div class="app-subtitle">Scan with your phone camera</div></div></div></div><div class="footer"><style>
+        .footer {
+          padding: 24px;
+          font-size: 16px;
+          color: hsl(var(--muted-foreground));
+          text-align: center;
+          width: 100%;
+        }
+
+        a {
+          color: hsl(var(--primary));
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+
+        a:hover {
+          color: hsl(var(--primary) / 0.8);
+        }
+      </style>Made with ❤️ in<!-- --> <a href="https://rork.com" target="_blank">Rork</a></div><script>
+              const copyButton = document.querySelector('.copy-button');
+              const url = "http://smartrecipe.rork.app/robots.txt";
+              
+              if (copyButton) {
+                copyButton.addEventListener('click', () => {
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(() => {
+                      const originalContent = copyButton.innerHTML;
+                      copyButton.textContent = 'Link copied';
+                      setTimeout(() => {
+                        copyButton.innerHTML = originalContent;
+                      }, 2000);
+                    });
+                  } else {
+                    // Fallback for browsers that don't support clipboard API
+                    const textarea = document.createElement('textarea');
+                    textarea.value = url;
+                    textarea.style.position = 'fixed';
+                    textarea.style.opacity = '0';
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    try {
+                      document.execCommand('copy');
+                      const originalContent = copyButton.innerHTML;
+                      copyButton.textContent = 'Link copied';
+                      setTimeout(() => {
+                        copyButton.innerHTML = originalContent;
+                      }, 2000);
+                    } catch (err) {
+                      console.error('Failed to copy:', err);
+                    }
+                    document.body.removeChild(textarea);
+                  }
+                });
+              }
+
+              // Mobile deep linking and install logic
+              const installButton = document.getElementById('install-button');
+
+              // Detect OS
+              const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+              const isAndroid = /Android/.test(navigator.userAgent);
+
+              if (installButton) {
+                if (isIOS) {
+                  installButton.href = 'https://apps.apple.com/app/apple-store/id982107779';
+                } else {
+                  installButton.href = 'https://play.google.com/store/apps/details?id=host.exp.exponent';
+                }
+              }
+            </script></body></html>
